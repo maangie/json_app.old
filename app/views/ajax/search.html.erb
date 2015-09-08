@@ -1,4 +1,4 @@
-<%= form_tag({ action: 'result' }, remote: true) do %>
+<%= form_tag({ action: 'result' }, remote: true, id: 'ajax_form') do %>
   <% options = options_from_collection_for_select(@books, :publish, :publish,
                                                   'SBクリエイティブ') %>
 
